@@ -6,56 +6,53 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
 header {
-    position: absolute;
-    top: 10px;
     text-align: center;
-    width: 100%;
+    margin: 20px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-header p {
-    font-size: 16px;
-    color: #bbb;
-}
-
-.buttons {
+.sidebar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    margin-top: 100px;
+    gap: 10px;
+}
+
+.sidebar.left {
+    left: 10px;
+}
+
+.sidebar.right {
+    right: 10px;
 }
 
 .button {
-    padding: 15px 30px;
+    padding: 10px 20px;
     border: 2px solid #555;
     border-radius: 8px;
     background: transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
     text-decoration: none;
-    width: 200px;
 }
 
 .button:hover {
     background: #444;
     transform: scale(1.05);
-}
-
-footer {
-    position: absolute;
-    bottom: 10px;
-    font-size: 14px;
 }
