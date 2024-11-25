@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            alert('Esta funcionalidade estará disponível em breve!');
+            if (button.classList.contains('disabled')) {
+                alert('Esta funcionalidade estará disponível em breve!');
+            } else {
+                alert('Botão clicado!');
+            }
         });
     });
 });
