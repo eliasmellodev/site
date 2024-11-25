@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e1e2f, #34233e);
+    background-image: url('assets/christmas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: #fff;
     display: flex;
     flex-direction: column;
